@@ -1,12 +1,12 @@
 import './Nav.component.scss';
 import React,{useContext} from 'react';
 import { Link } from 'react-router-dom';
-import {  BottomNavigationAction, Button } from '@material-ui/core';
-import ButtonNav from '../ButtonNav/ButtonNav.component';
-import HomeIcon from '@material-ui/icons/Home';
-import WorkIcon from '@material-ui/icons/Work';
-import HelpIcon from '@material-ui/icons/Help';	
-import { WbSunny, NightsStay } from '@material-ui/icons';
+//import {  BottomNavigationAction, Button } from '@material-ui/core';
+//import ButtonNav from '../ButtonNav/ButtonNav.component';
+//import HomeIcon from '@material-ui/icons/Home';
+//import WorkIcon from '@material-ui/icons/Work';
+//import HelpIcon from '@material-ui/icons/Help';	
+//import { WbSunny, NightsStay } from '@material-ui/icons';
 import Context from '../../context';
 
 export default function Nav() { 
@@ -19,7 +19,7 @@ export default function Nav() {
     <Context.Consumer>
     {context => (<div className={context.isDeDia?"Nav navDia":"Nav navNoche"}> 
         
-          <ButtonNav className="Nav-link" label="Home" to="/"><HomeIcon /></ButtonNav>
+          <Link className="Nav-link" label="Home" to="/">Home</Link>
         {/*
         <Link className="Nav-link" to='/store'><BottomNavigationAction className="Nav-link" label="Store" icon={<WorkIcon />} /></Link>
         <Link className="Nav-link" to='/about'><BottomNavigationAction className="Nav-link" label="About" icon={<HelpIcon />} /></Link>
