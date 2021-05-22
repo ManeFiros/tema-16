@@ -1,0 +1,17 @@
+@import "../../styles/colors.scss"; 
+.material {
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+.apply-all-width{
+    width: 100%;
+}
+
+.inputDia{
+    color: $dark !important;
+}
+
+.inputNoche input{
+    color: $sucess !important;
+}

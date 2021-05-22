@@ -1,0 +1,17 @@
+@import "../../styles/colors.scss";
+img.imgProduct{
+    max-height: 800px;
+}
+
+.imgText{
+    width: 50%;
+    padding: 10px 30px;
+}
+
+.contentProduct{
+    display: flex;
+}
+.price{
+    font-size: 28px;
+    color: $sucess;
+}

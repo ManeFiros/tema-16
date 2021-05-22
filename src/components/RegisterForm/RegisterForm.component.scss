@@ -1,0 +1,11 @@
+@import '../../styles/colors.scss';
+
+.modeDia{
+    background-color: $light;
+    color: $dark;
+}
+
+.modeNoche{
+  background-color: $dark2;
+  color: $light;
+}   

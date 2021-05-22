@@ -1,0 +1,16 @@
+@import "../../styles/colors.scss";
+
+p.enlace{
+    text-align: center;
+    color:$dark;
+    width: 280px;
+}
+
+p.enlace:hover{
+    color: $secondary;
+}
+
+img.imgParrilla{
+    width: 225px;
+    max-height: 340px;
+}

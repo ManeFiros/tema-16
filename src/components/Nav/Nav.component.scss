@@ -1,0 +1,44 @@
+@import "../../styles/colors.scss"; 
+@import "../../App.scss";
+.Nav { 
+    align-items: center;
+    min-height: 10vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navDia{    
+    @extend .header-dia;
+    //background-color: $info !important;
+}
+
+.navNoche{    
+    @extend .header-noche;
+    //background-color: $dark !important;
+} 
+
+.Nav-link { 
+    //color: $light !important;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px 12px;
+    text-decoration: none !important;
+}
+
+.Nav-link:hover {
+    color: #dddddd !important;
+    text-decoration: underline !important;
+}
+
+.MuiBottomNavigationAction-label.MuiBottomNavigationAction-iconOnly {
+     opacity: .7 !important;
+     transition-delay: 0.1s !important;
+}
+.MuiButtonBase-root{
+    margin: 12px !important; 
+}
+
+.navNoche .MuiBottomNavigationAction-root {    
+    color:rgba(200, 200, 200, 0.54);
+}
