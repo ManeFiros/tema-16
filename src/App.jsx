@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.scss';
-import React, {useReducer} from 'react';
+import React, {useReducer, useState} from 'react';
 import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import Nav from './components/Nav/Nav.component';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute.component';
@@ -13,16 +13,16 @@ import { reducerIsLogged, initialStateIsLogged, LOG_IN, LOG_OUT, DIA, NOCHE, red
 
 function App() {
 
-  const [isLogged, dispatch] = useReducer(reducerIsLogged, initialStateIsLogged);
-  const [isDeDia, dispatchMode] = useReducer(reducerIsDeDia, initialStateIsDeDia);
+  const [isLogged, dispatch] = useState(true);//useReducer(reducerIsLogged, initialStateIsLogged);
+  const [isDeDia, dispatchMode] = useState(true);//useReducer(reducerIsDeDia, initialStateIsDeDia);
 
-  let logOut = () => { dispatch({type: LOG_OUT}); }
+  let logOut = () => { /*dispatch({type: LOG_OUT});*/ }
 
-  let logIn = () => { dispatch({type: LOG_IN}); }
+  let logIn = () => { /*dispatch({type: LOG_IN});*/ }
 
-  let hazDia = () => { dispatchMode({type: DIA}); }
+  let hazDia = () => {/* dispatchMode({type: DIA});*/ }
 
-  let hazNoche = () => { dispatchMode({type: NOCHE}); }
+  let hazNoche = () => { /*dispatchMode({type: NOCHE});*/ }
 
   return (
     <div className="App">

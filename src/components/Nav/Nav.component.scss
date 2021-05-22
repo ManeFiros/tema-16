@@ -3,6 +3,9 @@
 .Nav { 
     align-items: center;
     min-height: 10vh;
+    max-height: 10vh;
+    max-width: 60%;
+    background-color: transparent;
     position: absolute;
     top: 0;
     right: 0;
@@ -24,6 +27,7 @@
     font-weight: 700;
     margin: 0px 12px;
     text-decoration: none !important;
+    padding-top: 0 !important;
 }
 
 .Nav-link:hover {
@@ -41,4 +45,5 @@
 
 .navNoche .MuiBottomNavigationAction-root {    
     color:rgba(200, 200, 200, 0.54);
+    max-width: 10%;
 }

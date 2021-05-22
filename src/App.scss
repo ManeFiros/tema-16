@@ -2,6 +2,7 @@
 
 .App {
   text-align: center;
+  min-width: 650px;
 }
 
 .App-logo {
@@ -17,11 +18,12 @@
 
 .App-header { 
   min-height: 10vh;
+  max-height: 10vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: left;
-  font-size: calc(5px + 1.5vmin); 
+  font-size: calc(5px + 1vmin) !important; 
 }
 
 .header-dia{
