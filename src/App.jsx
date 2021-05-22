@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.scss';
 import React, {useReducer, useState} from 'react';
-//import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 //import Nav from './components/Nav/Nav.component';
 //import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute.component';
 //import Login from './pages/Login/Login.page';
-//import About from './pages/About/About.page';
+import About from './pages/About/About.page';
 //import Store from './pages/Store/Store.page';
 //import Product from './pages/Product/Product.page';
 import Context from './context';
@@ -26,29 +26,29 @@ function App() {
 
   return (
     <div className="App">
-      <Context.Provider value={{
+      {/*<Context.Provider value={{
         isLogged: isLogged,
         logIn: logIn,
         logOut: logOut,
         isDeDia: isDeDia,
         hazDia: hazDia,
         hazNoche: hazNoche,
-      }}>
+      }}>*/}
         <header className={isDeDia?"App-header header-dia":"App-header header-noche"}>
           <img src={logo} className="App-logo" alt="logo" />
-          <h1>ReactJS | Imagina Formación 1</h1>
+          <h1>ReactJS | Imagina Formación</h1>
         </header>
-        {/*<div className={isDeDia?"Dia":"Noche"}>
+        <div className={isDeDia?"Dia":"Noche"}>
           <Router>
-            <Nav/>
+            {/*<Nav/>*/}
             <Route exact path="/" component={About}></Route>
             {/*<ProtectedRoute exact path="/store" component={Store} />
             <ProtectedRoute path="/product/:MODIFICABLE" component={Product}/>
-            <ProtectedRoute exact path="/about" component={About}/>
+    <ProtectedRoute exact path="/about" component={About}/>*/}
             <Redirect from="/**" to='/' />
           </Router>
-        </div>*/}
-      </Context.Provider>
+        </div>
+      {/*</Context.Provider>*/}
     </div>
   );
 }
