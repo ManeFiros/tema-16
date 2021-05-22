@@ -14,8 +14,8 @@ let reduccers = combineReducers({
 
 let store = createStore(
     reduccers,
-    compose(applyMiddleware(sagaMiddleware),
-        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+    compose(applyMiddleware(sagaMiddleware)/*,
+        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()*/)
 );
 // Ejecutamos el hilo de ejecución del middleware,
 // sólo funcionará una vez ejecutado el método applyMiddleware
