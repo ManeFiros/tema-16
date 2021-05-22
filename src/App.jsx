@@ -36,7 +36,7 @@ function App() {
       }}>
         <header className={isDeDia?"App-header header-dia":"App-header header-noche"}>
           <img src={logo} className="App-logo" alt="logo" />
-          <h1>ReactJS | Imagina Formación</h1>
+          <h1>ReactJS | Imagina Formación 1</h1>
         </header>
         {/*<div className={isDeDia?"Dia":"Noche"}>
           <Router>
