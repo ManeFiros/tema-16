@@ -40,7 +40,7 @@ function App() {
         </header>
         <div className={isDeDia?"Dia":"Noche"}>
           <Router>
-            <Nav/>
+            {/*<Nav/>*/}
             <Route exact path="/" component={Login}></Route>
             {/*<ProtectedRoute exact path="/store" component={Store} />
             <ProtectedRoute path="/product/:MODIFICABLE" component={Product}/>
