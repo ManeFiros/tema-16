@@ -1,6 +1,7 @@
 @import "../../styles/colors.scss"; 
 @import "../../App.scss";
 .Nav { 
+    padding-top: 2%;
     align-items: center;
     min-height: 10vh;
     max-height: 10vh;
@@ -23,6 +24,7 @@
 
 .Nav-link { 
     //color: $light !important;
+    margin-top: 1%;
     font-size: 18px;
     font-weight: 700;
     margin: 0px 12px;
@@ -43,7 +45,12 @@
     margin: 12px !important; 
 }
 
-.navNoche .MuiBottomNavigationAction-root {    
+.navNoche .colo {    
     color:rgba(200, 200, 200, 0.54);
-    max-width: 10%;
+    //max-width: 10%;
+}
+
+.navDia .colo {    
+    color:rgba(50, 50, 50, 0.54);
+    //max-width: 10%;
 }
