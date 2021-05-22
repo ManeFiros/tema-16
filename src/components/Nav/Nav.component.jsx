@@ -1,7 +1,7 @@
 import './Nav.component.scss';
 import React,{useContext} from 'react';
 import { Link } from 'react-router-dom';
-//import {  BottomNavigationAction, Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 //import ButtonNav from '../ButtonNav/ButtonNav.component';
 //import HomeIcon from '@material-ui/icons/Home';
 //import WorkIcon from '@material-ui/icons/Work';
@@ -22,6 +22,9 @@ export default function Nav() {
           <Link className="Nav-link colo" label="Home" to="/">Home</Link>
           <Link className="Nav-link colo" label="Store" to="/store">Store</Link>
           <Link className="Nav-link colo" label="About" to="/about">About</Link>
+          {context.isDeDia?
+            <Button onClick={hazNoche} className="Nav-link colo">Noche</Button>:
+            <Button onClick={hazDia} className="Nav-link colo" >Día</Button>}
         {/*
         <Link className="Nav-link" to='/store'><BottomNavigationAction className="Nav-link" label="Store" icon={<WorkIcon />} /></Link>
         <Link className="Nav-link" to='/about'><BottomNavigationAction className="Nav-link" label="About" icon={<HelpIcon />} /></Link>
