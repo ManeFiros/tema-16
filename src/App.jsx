@@ -34,7 +34,7 @@ function App() {
         hazDia: hazDia,
         hazNoche: hazNoche,
       }}>*/}
-        <header /*className={isDeDia?"App-header header-dia":"App-header header-noche"}*/>
+        <header className={isDeDia?"App-header header-dia":"App-header header-noche"}>
           <img src={logo} className="App-logo" alt="logo" />
           <h1>ReactJS | Imagina Formación</h1>
         </header>
