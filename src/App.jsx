@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.scss';
 import React, {useReducer, useState} from 'react';
-import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
-import Nav from './components/Nav/Nav.component';
+//import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
+//import Nav from './components/Nav/Nav.component';
 //import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute.component';
-import Login from './pages/Login/Login.page';
-import About from './pages/About/About.page';
+//import Login from './pages/Login/Login.page';
+//import About from './pages/About/About.page';
 //import Store from './pages/Store/Store.page';
 //import Product from './pages/Product/Product.page';
 //import Context from './context';
@@ -13,16 +13,16 @@ import About from './pages/About/About.page';
 
 function App() {
 
-  const [isLogged, dispatch] = useState(true);//useReducer(reducerIsLogged, initialStateIsLogged);
+  //const [isLogged, dispatch] = useState(true);//useReducer(reducerIsLogged, initialStateIsLogged);
   const [isDeDia, dispatchMode] = useState(true);//useReducer(reducerIsDeDia, initialStateIsDeDia);
 
-  let logOut = () => { /*dispatch({type: LOG_OUT});*/ }
+  //let logOut = () => { /*dispatch({type: LOG_OUT});*/ }
 
-  let logIn = () => { /*dispatch({type: LOG_IN});*/ }
+  //let logIn = () => { /*dispatch({type: LOG_IN});*/ }
 
-  let hazDia = () => {/* dispatchMode({type: DIA});*/ }
+  //let hazDia = () => {/* dispatchMode({type: DIA});*/ }
 
-  let hazNoche = () => { /*dispatchMode({type: NOCHE});*/ }
+  //let hazNoche = () => { /*dispatchMode({type: NOCHE});*/ }
 
   return (
     <div className="App">
@@ -38,16 +38,16 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <h1>ReactJS | Imagina Formación</h1>
         </header>
-        <div className={isDeDia?"Dia":"Noche"}>
+        {/*<div className={isDeDia?"Dia":"Noche"}>
           <Router>
-            {/*<Nav/>*/}
+            <Nav/>
             <Route exact path="/" component={About}></Route>
             {/*<ProtectedRoute exact path="/store" component={Store} />
             <ProtectedRoute path="/product/:MODIFICABLE" component={Product}/>
-            <ProtectedRoute exact path="/about" component={About}/>*/}
+            <ProtectedRoute exact path="/about" component={About}/>
             <Redirect from="/**" to='/' />
           </Router>
-        </div>
+        </div>*/}
       {/*</Context.Provider>*/}
     </div>
   );
