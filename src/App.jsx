@@ -3,13 +3,13 @@ import './App.scss';
 import React, {useReducer, useState} from 'react';
 import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import Nav from './components/Nav/Nav.component';
-import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute.component';
+//import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute.component';
 import Login from './pages/Login/Login.page';
-import About from './pages/About/About.page';
-import Store from './pages/Store/Store.page';
-import Product from './pages/Product/Product.page';
-import Context from './context';
-import { reducerIsLogged, initialStateIsLogged, LOG_IN, LOG_OUT, DIA, NOCHE, reducerIsDeDia, initialStateIsDeDia} from './context/reducers';
+//import About from './pages/About/About.page';
+//import Store from './pages/Store/Store.page';
+//import Product from './pages/Product/Product.page';
+//import Context from './context';
+//import { reducerIsLogged, initialStateIsLogged, LOG_IN, LOG_OUT, DIA, NOCHE, reducerIsDeDia, initialStateIsDeDia} from './context/reducers';
 
 function App() {
 
@@ -26,14 +26,14 @@ function App() {
 
   return (
     <div className="App">
-      <Context.Provider value={{
+      {/*<Context.Provider value={{
         isLogged: isLogged,
         logIn: logIn,
         logOut: logOut,
         isDeDia: isDeDia,
         hazDia: hazDia,
         hazNoche: hazNoche,
-      }}>
+      }}>*/}
         <header className={isDeDia?"App-header header-dia":"App-header header-noche"}>
           <img src={logo} className="App-logo" alt="logo" />
           <h1>ReactJS | Imagina Formación</h1>
@@ -42,13 +42,13 @@ function App() {
           <Router>
             <Nav/>
             <Route exact path="/" component={Login}></Route>
-            <ProtectedRoute exact path="/store" component={Store} />
+            {/*<ProtectedRoute exact path="/store" component={Store} />
             <ProtectedRoute path="/product/:MODIFICABLE" component={Product}/>
-            <ProtectedRoute exact path="/about" component={About}/>
+            <ProtectedRoute exact path="/about" component={About}/>*/}
             <Redirect from="/**" to='/' />
           </Router>
         </div>
-      </Context.Provider>
+      {/*</Context.Provider>*/}
     </div>
   );
 }
