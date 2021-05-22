@@ -6,7 +6,10 @@ import { Button } from '@material-ui/core';
 //import HomeIcon from '@material-ui/icons/Home';
 //import WorkIcon from '@material-ui/icons/Work';
 //import HelpIcon from '@material-ui/icons/Help';	
-import { WbSunny, NightsStay } from '@material-ui/icons';
+//import { WbSunny } from '@material-ui/icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faSun } from '@fortawesome/free-solid-svg-icons';
 import Context from '../../context';
 
 export default function Nav() { 
@@ -23,8 +26,8 @@ export default function Nav() {
           <Link className="Nav-link colo" label="Store" to="/store">Store</Link>
           <Link className="Nav-link colo" label="About" to="/about">About</Link>
           {context.isDeDia?
-            <Button onClick={hazNoche} className="Nav-link colo"><NightsStay /></Button>:
-            <Button onClick={hazDia} className="Nav-link colo" ><WbSunny /></Button>}
+            <Button onClick={hazNoche} className="Nav-link colo"><FontAwesomeIcon icon={faMoon} /></Button>:
+            <Button onClick={hazDia} className="Nav-link colo" ><FontAwesomeIcon icon={faSun}/></Button>}
         {/*
         <Link className="Nav-link" to='/store'><BottomNavigationAction className="Nav-link" label="Store" icon={<WorkIcon />} /></Link>
         <Link className="Nav-link" to='/about'><BottomNavigationAction className="Nav-link" label="About" icon={<HelpIcon />} /></Link>
