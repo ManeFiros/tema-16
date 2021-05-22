@@ -1,7 +1,7 @@
 @import "../../styles/colors.scss"; 
 @import "../../App.scss";
 .Nav { 
-    padding-top: 2%;
+    padding-top: 1%;
     align-items: center;
     min-height: 10vh;
     max-height: 10vh;
@@ -23,8 +23,7 @@
 } 
 
 .Nav-link { 
-    //color: $light !important;
-    margin-top: 0.5%;
+    //color: $light !important; 
     font-size: 18px;
     font-weight: 700;
     margin: 0px 12px;
