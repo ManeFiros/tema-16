@@ -16,13 +16,13 @@ function App() {
   const [isLogged, dispatch] = useReducer(reducerIsLogged, initialStateIsLogged);
   const [isDeDia, dispatchMode] = useReducer(reducerIsDeDia, initialStateIsDeDia);
 
-  let logOut = () => { dispatch({type: LOG_OUT}); }
+  let logOut = () => { /*dispatch({type: LOG_OUT});*/ }
 
-  let logIn = () => { dispatch({type: LOG_IN}); }
+  let logIn = () => { /*dispatch({type: LOG_IN});*/ }
 
-  let hazDia = () => {dispatchMode({type: DIA}); }
+  let hazDia = () => {/*dispatchMode({type: DIA});*/ }
 
-  let hazNoche = () => { dispatchMode({type: NOCHE}); }
+  let hazNoche = () => {/* dispatchMode({type: NOCHE});*/ }
 
   return (
     <div className="App">
