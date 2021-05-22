@@ -8,32 +8,32 @@ import React, {useReducer, useState} from 'react';
 //import About from './pages/About/About.page';
 //import Store from './pages/Store/Store.page';
 //import Product from './pages/Product/Product.page';
-//import Context from './context';
+import Context from './context';
 //import { reducerIsLogged, initialStateIsLogged, LOG_IN, LOG_OUT, DIA, NOCHE, reducerIsDeDia, initialStateIsDeDia} from './context/reducers';
 
 function App() {
 
-  //const [isLogged, dispatch] = useState(true);//useReducer(reducerIsLogged, initialStateIsLogged);
+  const [isLogged, dispatch] = useState(true);//useReducer(reducerIsLogged, initialStateIsLogged);
   const [isDeDia, dispatchMode] = useState(true);//useReducer(reducerIsDeDia, initialStateIsDeDia);
 
-  //let logOut = () => { /*dispatch({type: LOG_OUT});*/ }
+  let logOut = () => { /*dispatch({type: LOG_OUT});*/ }
 
-  //let logIn = () => { /*dispatch({type: LOG_IN});*/ }
+  let logIn = () => { /*dispatch({type: LOG_IN});*/ }
 
-  //let hazDia = () => {/* dispatchMode({type: DIA});*/ }
+  let hazDia = () => {/* dispatchMode({type: DIA});*/ }
 
-  //let hazNoche = () => { /*dispatchMode({type: NOCHE});*/ }
+  let hazNoche = () => { /*dispatchMode({type: NOCHE});*/ }
 
   return (
     <div className="App">
-      {/*<Context.Provider value={{
+      <Context.Provider value={{
         isLogged: isLogged,
         logIn: logIn,
         logOut: logOut,
         isDeDia: isDeDia,
         hazDia: hazDia,
         hazNoche: hazNoche,
-      }}>*/}
+      }}>
         <header className={isDeDia?"App-header header-dia":"App-header header-noche"}>
           <img src={logo} className="App-logo" alt="logo" />
           <h1>ReactJS | Imagina Formación</h1>
@@ -48,7 +48,7 @@ function App() {
             <Redirect from="/**" to='/' />
           </Router>
         </div>*/}
-      {/*</Context.Provider>*/}
+      </Context.Provider>
     </div>
   );
 }
