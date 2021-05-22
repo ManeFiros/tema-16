@@ -9,12 +9,12 @@ import About from './pages/About/About.page';
 //import Store from './pages/Store/Store.page';
 //import Product from './pages/Product/Product.page';
 import Context from './context';
-//import { reducerIsLogged, initialStateIsLogged, LOG_IN, LOG_OUT, DIA, NOCHE, reducerIsDeDia, initialStateIsDeDia} from './context/reducers';
+import { reducerIsLogged, initialStateIsLogged, LOG_IN, LOG_OUT, DIA, NOCHE, reducerIsDeDia, initialStateIsDeDia} from './context/reducers';
 
 function App() {
 
-  const [isLogged, dispatch] = useState(true);//useReducer(reducerIsLogged, initialStateIsLogged);
-  const [isDeDia, dispatchMode] = useState(true);//useReducer(reducerIsDeDia, initialStateIsDeDia);
+  const [isLogged, dispatch] = useReducer(reducerIsLogged, initialStateIsLogged);
+  const [isDeDia, dispatchMode] = useReducer(reducerIsDeDia, initialStateIsDeDia);
 
   let logOut = () => { /*dispatch({type: LOG_OUT});*/ }
 
