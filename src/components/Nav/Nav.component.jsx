@@ -20,6 +20,8 @@ export default function Nav() {
     {context => (<div className={context.isDeDia?"Nav navDia":"Nav navNoche"}> 
         
           <Link className="Nav-link" label="Home" to="/">Home</Link>
+          <Link className="Nav-link" label="Store" to="/store">Store</Link>
+          <Link className="Nav-link" label="About" to="/about">About</Link>
         {/*
         <Link className="Nav-link" to='/store'><BottomNavigationAction className="Nav-link" label="Store" icon={<WorkIcon />} /></Link>
         <Link className="Nav-link" to='/about'><BottomNavigationAction className="Nav-link" label="About" icon={<HelpIcon />} /></Link>
