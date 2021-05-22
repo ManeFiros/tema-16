@@ -26,14 +26,14 @@ function App() {
 
   return (
     <div className="App">
-      {/*<Context.Provider value={{
+      <Context.Provider value={{
         isLogged: isLogged,
         logIn: logIn,
         logOut: logOut,
         isDeDia: isDeDia,
         hazDia: hazDia,
         hazNoche: hazNoche,
-      }}>*/}
+      }}>
         <header className={isDeDia?"App-header header-dia":"App-header header-noche"}>
           <img src={logo} className="App-logo" alt="logo" />
           <h1>ReactJS | Imagina Formación</h1>
@@ -48,7 +48,7 @@ function App() {
             <Redirect from="/**" to='/' />
           </Router>
         </div>
-      {/*</Context.Provider>*/}
+      </Context.Provider>
     </div>
   );
 }
